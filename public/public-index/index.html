@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>360会员商城</title>
+  <link rel="stylesheet" href="../WBYY/bcss/bootstrap.css"/>
+  <link rel="stylesheet" href="../css/comm.css"/>
+  <link rel="stylesheet" href="../css/index.css"/>
+  <script src="../WBYY/js/jquery.min.js"></script>
+  <script src="../WBYY/js/popper.min.js"></script>
+  <script src="../WBYY/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- 头部html引入 -->
+<header id="header" class="container"></header>
+  <!-- 中间部分 -->
+<main>
+  <!-- 轮播界面 -->
+<div class="kuan">
+  <div id="demo" class="carousel" data-ride="carousel ">
+      <!-- 1、轮播图片 -->
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img class="tu" src="../img/lunbo/banner1.png"/>
+          </div>
+          <div class="carousel-item">
+              <img  class="tu" src="../img/lunbo/banner2.png"/>
+          </div>
+          <div class="carousel-item">
+              <img  class="tu" src="../img/lunbo/banner3.png"/>
+          </div>
+          <div class="carousel-item">
+              <img  class="tu" src="../img/lunbo/banner4.png"/>
+          </div>
+      </div>
+      
+      <!-- 3、轮播指示器 -->
+      <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+          <li data-target="#demo" data-slide-to="3"></li>
+      </ul>
+      <!-- 4、轮播ul示意 -->
+      <div class="center">
+        <ul class="lunbo">
+          <li><a href="javascrip:;">全部分类</a></li>
+          <li><a href="javascrip:;">安全路由</a></li>
+          <li><a href="javascrip:;">儿童守护</a></li>
+          <li><a href="javascrip:;">家庭安防</a></li>
+          <li><a href="javascrip:;">扫地机器人</a></li>
+          <li><a href="javascrip:;">母婴亲子</a></li>
+          <li><a href="javascrip:;">居家生活</a></li>
+          <li><a href="javascrip:;">潮流电器</a></li>
+          <li><a href="javascrip:;">时尚车品</a></li>
+          <li><a href="javascrip:;">配件频道</a></li>
+        </ul>
+        <!-- 2、左右箭头 -->
+          <a href="#demo" class="carousel-control-prev arrows left" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a href="#demo" class="carousel-control-next arrows right" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+          </a>
+      </div>
+  </div>
+</div>
+  <!-- 热门活动-->
+<span class='s1' id="remenhuodong">热门活动</span>
+<div class='remen'>
+    <a href="../public-shopping/remen/remen.html">
+      <img class="hover" id='rm1'src="../img/remen/zhongqiu01.jpg">
+    </a>
+    <a href="../public-shopping/remen/remen.html">
+      <img class="hover" id='rm2' src="../img/remen/saodi.jpg">
+    </a>
+    <a href="../public-shopping/remen/remen.html">
+      <img class="hover" id='rm3'src="../img/remen/360shoubiao.jpg">
+    </a>
+</div>
+  <!-- 新品推荐-->
+<span class='s1' id="xinpintuijian">新品推荐</span>
+<div class='xinpin'>
+  <div>
+    <a href="javascrip:;">
+      <img class="hover" id='xp1'src="../img/xinpin/360-90.jpg" >
+    </a>
+  </div>
+  <div>
+    <a href="javascrip:;">
+      <img class="hover" id='xp2'src="../img/xinpin/xingchek600.jpg">
+    </a>
+  </div>
+  <div>
+    <a href="javascrip:;">
+      <img class="hover" id='xp3'src="../img/xinpin/lanyaerji.jpg">
+    </a>
+  </div>
+  <div>
+    <a href="javascrip:;">
+      <img class="hover" id='xp4'src="../img/xinpin/ertong.jpg">
+    </a>
+  </div>
+</div>
+  <!-- 家庭安防-->
+<span class='s1' id="jiatinganfang">家庭安防</span>
+<div class='tongy'>
+  <div id='ty1' class="hover">
+    <a href="">
+      <img  src="../img/jiating/jiating01.jpg">
+    </a>
+  </div>
+  <div id='ty2'class="hover">
+    <a href="#">
+      <img src="../img/jiating/jiating02.png">
+      <p class='namep'>360智能摄像机云台AI版D916</p>
+      <p class='descp'>六大升级</p>
+      <p class='price'>
+        <span class='cur-price'>¥199</span>
+        <span class='old-price'>¥249</span>
+      </p>
+    </a>
+  </div>
+  <div id='ty3'class="hover">
+    <a href="#">
+      <img src="../img/jiating/jiating03.png">
+      <p class='namep'>360智能摄像机云台变焦版</p>
+      <p class='descp'>9倍混合变焦</p>
+      <p class='price'>
+        <span class='cur-price'>¥349</span>
+      </p>
+    </a>
+  </div>
+  <div id='ty4'class="hover">
+    <a href="#">
+      <img src="../img/jiating/jiating04.png">
+      <p class='namep'>360可视门铃1C</p>
+      <p class='descp'>新一代可视门铃</p>
+      <p class='price'>
+        <span class='cur-price'>¥269</span>
+      </p>
+    </a>
+  </div>
+  <div id='ty5'class="hover">
+    <a href="#">
+      <img src="../img/jiating/jiating05.png">
+      <p class='namep'>360可视门铃   赠送两天循环永久云录</p>
+      <p class='descp'>家庭安全守门员</p>
+      <p class='price'>
+        <span class='cur-price'>¥349</span>
+      </p>
+    </a>
+  </div>
+  <div id='ty6'class="hover">
+    <a href="#">
+      <img src="../img/jiating/jiating06.png">
+      <p class='namep'>360智能摄像机云台版1080p</p>
+      <p class='descp'>环视看家 不留盲区</p>
+      <p class='price'>
+        <span class='cur-price'>¥199</span>
+      </p>
+    </a>
+  </div>
+  <div id='ty7'class="hover">
+    <a href="#">
+      <img src="../img/jiating/jiating07.png">
+      <p class='namep'>360智能摄像机</p>
+      <p class='descp'>小水滴1080P</p>
+      <p class='price'>
+        <span class='cur-price'>¥169</span>
+      </p>
+    </a>
+  </div>
+</div>
+  <!-- 安全路由 -->
+<span class='s1' id="anquanluyou">安全路由</span>
+<div class='tongy'>
+  <div id='ty1' class="hover">
+    <a href="#" >
+      <img  src="../img/luyou/luyou01.jpg">
+    </a>
+  </div>
+  <div id='ty2'class="hover">
+    <a href="#">
+      <img src="../img/luyou/luyou02.png">
+      <p class='namep'>360家庭防火墙路由器V5S</p>
+      <p class='descp'>极速传输 拒绝卡顿</p>
+      <p class='price'>
+        <span class='cur-price'>¥129</span>
+        <span class='old-price'>¥149</span>
+      </p>
+    </a>
+  </div>
+  <div id='ty3'class="hover">
+    <a href="#">
+      <img src="../img/luyou/luyou03.png">
+      <p class='namep'>360家庭防火墙路由器5Pro</p>
+      <p class='descp'>高增益六天线 双频CPU</p>
+      <p class='price'>
+        <span class='cur-price'>¥199</span>
+        <span class='old-price'>¥229</span>
+      </p>
+    </a>
+  </div>
+  <div id='ty4'class="hover">
+    <a href="#">
+      <img src="../img/luyou/luyou04.png">
+      <p class='namep'>360家庭防火墙路由器5S</p>
+      <p class='descp'>为家守护的黑科技路由</p>
+      <p class='price'>
+        <span class='cur-price'>¥119</span>
+      </p>
+    </a>
+  </div>
+  <div id='ty5'class="hover">
+    <a href="#">
+      <img src="../img/luyou/luyou05.png">
+      <p class='namep'>360家庭防火墙路由器 5</p>
+      <p class='descp'>全新第五代路由器</p>
+      <p class='price'>
+        <span class='cur-price'>¥99</span>
+      </p>
+    </a>
+  </div>
+  <div id='ty6'class="hover">
+    <a href="#">
+      <img src="../img/luyou/luyou06.png">
+      <p class='namep'>360家庭防火墙路由器5C</p>
+      <p class='descp'>高增益4天线</p>
+      <p class='price'>
+        <span class='cur-price'>¥79</span>
+      </p>
+    </a>
+  </div>
+  <div id='ty7'class="hover">
+    <a href="#">
+      <img src="../img/luyou/luyou07.png">
+      <p class='namep'>360安全路由2 P4</p>
+      <p class='descp'>光纤级旗舰路由</p>
+      <p class='price'>
+        <span class='cur-price'>¥269</span>
+      </p>
+    </a>
+  </div>
+</div>
+  <!-- 扫地机器人 -->
+<span class='s1' id="jiqiren">扫地机器人</span> 
+<div class='tongy'>
+  <div id='ty1'class="hover">
+    <a href="#">
+      <img  src="../img/dianzi/dianzigou.jpg">
+    </a>
+  </div>
+  <div id='ty2'class="hover">
+    <a href="#">
+      <img src="../img/dianzi/dainzi01.png">
+      <p class='namep'>360扫地机器人T90</p>
+      <p class='descp'>扫拖一体 激光导航真智能规划</p>
+      <p class='price'>
+        <span class='cur-price'>¥2499</span>
+      </p>
+    </a>
+  </div>
+  <div id='ty3'class="hover">
+    <a href="#">
+      <img src="../img/dianzi/dianzi02.png">
+      <p class='namep'>360扫地机器人S7</p>
+      <p class='descp'>激光高效扫拖 AI智能新升级</p>
+      <p class='price'>
+        <span class='cur-price'>¥1799</span>
+      </p>
+    </a>
+  </div>
+  <div id='ty4'class="hover">
+    <a href="#">
+      <img src="../img/dianzi/dianzi03.png">
+      <p class='namep'>360扫地机器人S6</p>
+      <p class='descp'>扫拖一体（黑白双色可选）</p>
+      <p class='price'>
+        <span class='cur-price'>¥1699</span>
+      </p>
+    </a>
+  </div>
+  <div id='ty5'class="hover">
+    <a href="#">
+      <img src="../img/dianzi/dainzi04.png">
+      <p class='namep'>360扫地机器人S5</p>
+      <p class='descp'>智能清扫 干净无死角</p>
+      <p class='price'>
+        <span class='cur-price'>¥1499</span>
+      </p>
+    </a>
+  </div>
+  <div id='ty6'class="hover">
+    <a href="#">
+      <img src="../img/dianzi/dainzi05.png">
+      <p class='namep'>360扫地机器人S5/S7通用主刷</p>
+      <p class='descp'>【配件】</p>
+      <p class='price'>
+        <span class='cur-price'>¥39</span>
+      </p>
+    </a>
+  </div>
+  <div id='ty7'class="hover">
+    <a href="#">
+      <img src="../img/dianzi/dianzi06.png">
+      <p class='namep'>360扫地机器人S5/S7通用边刷</p>
+      <p class='descp'>【配件】</p>
+      <p class='price'>
+        <span class='cur-price'>¥29</span>
+      </p>
+    </a>
+  </div>
+</div>
+  <!-- 行车安全 -->
+<span class='s1' id="xingche">行车安全</span> 
+<div class='tongy'>
+  <div id='ty1'class="hover">
+    <a href="#">
+      <img  src="../img/xingche/xingche.jpg">
+    </a>
+  </div>
+  <div id='ty2'class="hover">
+    <a href="#">
+      <img src="../img/xingche/xingche01.png">
+      <p class='namep'>360行车记录仪K600</p>
+      <p class='descp'>小巧身材 大有眼界</p>
+      <p class='price'>
+        <span class='cur-price'>¥399</span>
+      </p>
+    </a>
+  </div>
+  <div id='ty3'class="hover">
+    <a href="#">
+      <img src="../img/xingche/xingche02.png">
+      <p class='namep'>360行车记录仪 G380</p>
+      <p class='descp'>ETC+行车记录仪一体机</p>
+      <p class='price'>
+        <span class='cur-price'>¥499</span>
+      </p>
+    </a>
+  </div>
+  <div id='ty4'class="hover">
+    <a href="#">
+      <img src="../img/xingche/xingche03.png">
+      <p class='namep'>360行车记录仪M320</p>
+      <p class='descp'>全面屏后视镜记录仪</p>
+      <p class='price'>
+        <span class='cur-price'>¥399</span>
+      </p>
+    </a>
+  </div>
+  <div id='ty5'class="hover">
+    <a href="#">
+      <img src="../img/xingche/xingche04.png">
+      <p class='namep'>360行车记录仪G300 Plus</p>
+      <p class='descp'>含16G存储卡</p>
+      <p class='price'>
+        <span class='cur-price'>¥449</span>
+      </p>
+    </a>
+  </div>
+  <div id='ty6'class="hover">
+    <a href="#">
+      <img src="../img/xingche/xingche05.png">
+      <p class='namep'>360行车记录仪J501P</p>
+      <p class='descp'>能拍清车牌的行车记录仪</p>
+      <p class='price'>
+        <span class='cur-price'>¥299</span>
+      </p>
+    </a>
+  </div>
+  <div id='ty7'class="hover">
+    <a href="#">
+      <img src="../img/xingche/xingche06.png">
+      <p class='namep'>360行车记录仪后视镜版M301P</p>
+      <p class='descp'>前后双摄 倒车无忧</p>
+      <p class='price'>
+        <span class='cur-price'>¥349</span>
+      </p>
+    </a>
+  </div>
+</div>
+  <!-- 儿童守护 -->
+<span class='s1' id="ertong">儿童守护</span>
+<div class='tongy'>
+  <div id='ty1'class="hover">
+    <a href="#">
+      <img  src="../img/ertong/shoubiao.jpg">
+    </a>
+  </div>
+  <div id='ty2'class="hover">
+    <a href="#">
+      <img src="../img/ertong/shoubiao01.png">
+      <p class='namep'>360儿童手表P1 </p>
+      <p class='descp'>双摄高清 4G全网通</p>
+      <p class='price'>
+        <span class='cur-price'>¥699</span>
+      </p>
+    </a>
+  </div>
+  <div id='ty3'class="hover">
+    <a href="#">
+      <img src="../img/ertong/shoubiao02.png">
+      <p class='namep'>360儿童手表SE5</p>
+      <p class='descp'>超长待机不怕水</p>
+      <p class='price'>
+        <span class='cur-price'>¥199</span>
+      </p>
+    </a>
+  </div>
+  <div id='ty4'class="hover">
+    <a href="#">
+      <img src="../img/ertong/shoubiao03.png">
+      <p class='namep'>360儿童手表M1礼盒装</p>
+      <p class='descp'>能学习的电话手表</p>
+      <p class='price'>
+        <span class='cur-price'>¥599</span>
+      </p>
+    </a>
+  </div>
+  <div id='ty5'class="hover">
+    <a href="#">
+      <img src="../img/ertong/shoubiao04.png">
+      <p class='namep'>360儿童手表8X</p>
+      <p class='descp'>超长续航的4G电话手表</p>
+      <p class='price'>
+        <span class='cur-price'>¥399</span>
+      </p>
+    </a>
+  </div>
+  <div id='ty6'class="hover">
+    <a href="#">
+      <img src="../img/ertong/shoubiao05.png">
+      <p class='namep'>360电话手表X1 Pro</p>
+      <p class='descp'>运动快充版 少年新装备</p>
+      <p class='price'>
+        <span class='cur-price'>¥1299</span>
+      </p>
+    </a>
+  </div>
+  <div id='ty7'class="hover">
+    <a href="#">
+      <img src="../img/ertong/shoubiao06.png">
+      <p class='namep'>360儿童手表7X</p>
+      <p class='descp'>能支付的4G视频电话手表</p>
+      <p class='price'>
+        <span class='cur-price'>¥399</span>
+      </p>
+    </a>
+  </div>
+</div>
+  <!-- 社区 -->
+<span class='s1' id="shequ">社区</span>
+<div class="shequ">
+  <div class="w-shequ hover">
+    <a href="#">
+      <img  id='sq1'src="../img/shequ/shequ01.jpg" >
+    </a>
+    <div class="bg">
+      <p class="name-p">
+        <span>360儿童手表P1评测：全新巴迪龙系统 学习趣味新升级</span>
+      </p>
+      <p class="title-h">儿童手表作为可穿戴设备的一股生力军，
+        受到越来越多儿童和家长的爱戴。要寻求最符合孩子使用习惯的设计，
+        为孩子带来更加舒适更加有趣的体验，在功能上也要既有用又丰富，
+        所以近几个月儿童手表的更新换代还是比较快的。360儿童继发表儿童手表8X、
+        M1之后，在7月8号又推出了全新系列的产品——360儿童手表P1。
+        那么360儿童这一次在P1上带来了哪些进步呢，一起看一看…</p>
+    </div>
+    
+  </div>
+  <div class="w-shequ hover">
+    <a href="#">
+      <img  id='sq1'src="../img/shequ/shequ01.jpg" >
+    </a>
+    <div class="bg">
+      <p class="name-p">
+        <span>360儿童手表P1评测：全新巴迪龙系统 学习趣味新升级</span>
+      </p>
+      <p class="title-h">儿童手表作为可穿戴设备的一股生力军，
+        受到越来越多儿童和家长的爱戴。要寻求最符合孩子使用习惯的设计，
+        为孩子带来更加舒适更加有趣的体验，在功能上也要既有用又丰富，
+        所以近几个月儿童手表的更新换代还是比较快的。360儿童继发表儿童手表8X、
+        M1之后，在7月8号又推出了全新系列的产品——360儿童手表P1。
+        那么360儿童这一次在P1上带来了哪些进步呢，一起看一看…</p>
+    </div>
+  </div>
+  <div class="w-shequ hover">
+    <a href="#">
+      <img  id='sq1'src="../img/shequ/shequ01.jpg" >
+    </a>
+    <div class="bg">
+      <p class="name-p">
+        <span>360儿童手表P1评测：全新巴迪龙系统 学习趣味新升级</span>
+      </p>
+      <p class="title-h">儿童手表作为可穿戴设备的一股生力军，
+        受到越来越多儿童和家长的爱戴。要寻求最符合孩子使用习惯的设计，
+        为孩子带来更加舒适更加有趣的体验，在功能上也要既有用又丰富，
+        所以近几个月儿童手表的更新换代还是比较快的。360儿童继发表儿童手表8X、
+        M1之后，在7月8号又推出了全新系列的产品——360儿童手表P1。
+        那么360儿童这一次在P1上带来了哪些进步呢，一起看一看…</p>
+    </div>
+  </div>
+  <div class="w-shequ hover">
+    <a href="#">
+      <img  id='sq1'src="../img/shequ/shequ01.jpg" >
+    </a>
+    <div class="bg">
+      <p class="name-p">
+        <span>360儿童手表P1评测：全新巴迪龙系统 学习趣味新升级</span>
+      </p>
+      <p class="title-h">儿童手表作为可穿戴设备的一股生力军，
+        受到越来越多儿童和家长的爱戴。要寻求最符合孩子使用习惯的设计，
+        为孩子带来更加舒适更加有趣的体验，在功能上也要既有用又丰富，
+        所以近几个月儿童手表的更新换代还是比较快的。360儿童继发表儿童手表8X、
+        M1之后，在7月8号又推出了全新系列的产品——360儿童手表P1。
+        那么360儿童这一次在P1上带来了哪些进步呢，一起看一看…</p>
+    </div>
+  </div>
+</div>
+  <!-- 更多 -->
+<span class="s1" id="gengduo">更多商品</span>
+<div>
+  <!--1 小层 -->
+  <div class="gengduo">
+  <div class="gd-t hover">
+    <img src="../img/gengduo/01.png">
+    <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+    <p class="price">
+      <span class="cur-price">¥2820</span>
+    </p>
+  </div>
+  <div class="gd-t hover">
+    <img src="../img/gengduo/01.png">
+    <p class="name">联想笔记本ThinkPad L480 14英寸家用商务办公电脑i5-7200U/8G/256GSSD/win10/三年保</p>
+    <p class="price">
+      <span class="cur-price">¥5800</span>
+    </p>
+  </div>
+  <div class="gd-t hover">
+    <img src="../img/gengduo/01.png">
+    <p class="name">雷柏（Rapoo）M600 蓝牙多模式无线鼠标 黑色</p>
+    <p class="price">
+      <span class="cur-price">¥96</span>
+    </p>
+  </div>
+  <div class="gd-t hover">
+    <img src="../img/gengduo/01.png">
+    <p class="name">联想笔记本昭阳14W 14英寸防眩光轻薄学生家用商务电脑8G/256GSSD/Win10/一年全保一年上门</p>
+    <p class="price">
+      <span class="cur-price">¥2666</span>
+    </p>
+  </div>
+  <div class="gd-t hover">
+    <img src="../img/gengduo/01.png">
+    <p class="name">雷柏（Rapoo）X120PRO有线键鼠套装 黑色</p>
+    <p class="price">
+      <span class="cur-price">¥61</span>
+    </p>
+  </div>
+  </div>
+    <!-- 2小层 -->
+  <div class="gengduo">  
+    <div class="gd-t hover">
+      <img src="../img/gengduo/02.png">
+      <p class="name">雷柏（Rapoo）M100 蓝牙多模式无线鼠标 蓝色</p>
+      <p class="price">
+        <span class="cur-price">¥48</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/02.png">
+      <p class="name">雷柏（Rapoo）M100 蓝牙多模式无线鼠标 粉色</p>
+      <p class="price">
+        <span class="cur-price">¥50</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/02.png">
+      <p class="name">橘子工坊(Orange House) 台湾原装进口 洗衣机槽清洗剂 初生态活氧 150gX3包入/盒</p>
+      <p class="price">
+        <span class="cur-price">¥59</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/02.png">
+      <p class="name">橘子工坊(Orange House) 台湾原装进口 洗衣机槽清洗剂 初生态活氧 150gX3包入/盒</p>
+      <p class="price">
+        <span class="cur-price">¥59</span>
+      </p>
+    </div>  
+    <div class="gd-t hover">
+      <img src="../img/gengduo/02.png">
+      <p class="name">橘子工坊(Orange House)机洗洗衣液 天然洗衣精 制菌配方  台湾原装进口 补充包1500mL</p>
+      <p class="price">
+        <span class="cur-price">¥109</span>
+      </p>
+    </div>
+  </div>
+  <!--3 小层 -->
+  <div class="gengduo">  
+    <div class="gd-t hover">
+      <img src="../img/gengduo/03.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/03.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/03.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/03.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/03.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+  </div>
+  <!-- 4小层 -->
+  <div class="gengduo">  
+    <div class="gd-t hover">
+      <img src="../img/gengduo/04.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/04.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/04.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/04.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/04.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+  </div>
+  <!-- 5小层 -->
+  <div class="gengduo">  
+    <div class="gd-t hover">
+      <img src="../img/gengduo/05.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/05.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/05.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/05.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/05.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+  </div>
+  <!-- 6小层 -->
+  <div class="gengduo">  
+    <div class="gd-t hover">
+      <img src="../img/gengduo/06.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/06.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/06.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/06.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/06.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+  </div>
+  <!-- 7 小层 -->
+  <div class="gengduo">  
+    <div class="gd-t hover">
+      <img src="../img/gengduo/07.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/07.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/07.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/07.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/07.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+  </div>
+  <!-- 8 小层 -->
+  <div class="gengduo">  
+    <div class="gd-t hover">
+      <img src="../img/gengduo/08.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/08.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/08.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/08.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/08.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+  </div>
+  <!-- 9 小层 -->
+  <div class="gengduo">  
+    <div class="gd-t hover">
+      <img src="../img/gengduo/09.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/09.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/09.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/09.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/09.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+  </div>
+  <!-- 10 小层 -->
+  <div class="gengduo">  
+    <div class="gd-t hover">
+      <img src="../img/gengduo/10.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/10.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/10.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/10.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+    <div class="gd-t hover">
+      <img src="../img/gengduo/10.png">
+      <p class="name">联想台式机ThinkCentre M710T家用商用学习办公设计电脑主机i3-6100/4G/500GBHD/win10</p>
+      <p class="price">
+        <span class="cur-price">¥2820</span>
+      </p>
+    </div>
+  </div>
+</div>
+</main>
+  <!-- 右侧边白条 -->
+<div class="mod-right-side ">
+  <div class="sript">
+    <div class="right-mod">
+      <a class="liaotian" href="javascript:;"></a>
+      <a class="weixin" href="javascript:;"></a>
+    </div>
+    <div class="right-ruanjian">
+      <a class="ruanjian" href="javascript:;"></a>
+      <p id="DB">
+        <a class="shang" href="#"></a>
+      </p>
+    </div>
+  </div>
+</div>
+ <!--  左边导航栏  固定位置 -->
+<div id="uls">
+  <ul class="uls-lis">
+    <li><a href="#remenhuodong">热门活动</a></li>
+    <li><a href="#xinpintuijian">新品推荐</a></li>
+    <li><a href="#jiatinganfang">家庭安防</a></li>
+    <li><a href="#anquanluyou">安全路由</a></li>
+    <li><a href="#jiqiren">扫地机器人</a></li>
+    <li><a href="#xingche">行车安全</a></li>
+    <li><a href="#ertong">儿童守护</a></li>
+    <li><a href="#shequ">社区</a></li>
+    <li><a href="#gengduo">更多商品</a></li>
+  </ul>
+</div>
+<!-- 尾部hmtl引入 -->
+<footer id="footer" class="foor"></footer>
+<!-- 头部、底部js引入 -->
+
+  
+<script src="../js/header.js"></script>
+<script src="../js/footer.js"></script>
+<!-- dom 操作 --> 
+<script>
+  //获取鼠标滚轮的高度来实现侧边框和返回顶部的锚点
+  window.onscroll=function(){
+    var scrollTop=document.documentElement.scrollTop || document.body.scrollTop;
+    var Dtop=document.documentElement.scrollTop || document.body.scrollTop;
+    if(scrollTop>=675){
+      uls.style.display="block";
+      DB.style.display="block";
+    }else{
+      uls.style.display="none";
+      DB.style.display="none";
+    }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+/*顶部黑色边框*/
+.top{
+	height:40px;
+	background:#000;
+	position:fixed;
+	top:0;
+	z-index:1000;
+	width: 100%;
+}
+.dt-left ul,.dt-right ul{
+	margin-top:8px;
+	display:flex;
+}
+.dt-left ul a{color:#fff !important}
+.dt-right ul a{color:#fff !important}          
+.top ul li{ margin-right: 20px;}
+/*顶部hover二维码定位*/
+.top .dt-right .ma{
+	height: 32px;  width: 110px;
+	border-top-left-radius: 5px; 
+	border-top-right-radius: 5px;
+	position: relative;	
+	text-align: center;
+}
+.top .ma div{
+	width: 187px; height:81px;
+	background:white;
+	position:absolute;
+	top:32px; right: 0;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	display: none;
+}
+ .top .ma>div>img{   /*二维码*/
+	width: 50px;
+	margin: 15px;
+	margin-right: 110px;
+} 
+.top .ma .ma-p{
+	width: 115px; height: 30px;
+	font-size: 15px;
+	padding-top: 17px;
+}
+.top .ma .ma-p p{
+	margin-bottom: 5px;
+}
+.top .dt-right .ma:hover{background: white;}
+.top .dt-right .ma>a:hover{color:#000 !important;}
+.top .ma:hover div{display: block;}
+/*购物车hover*/
+.top .gouwu-img .gouwu-p{
+	width:248px; height:65px;
+	position: absolute;
+	background: white;
+	right:0px; top:32px;
+	padding: 5px;
+	font-size: 12px;
+	line-height: 65px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	display: none;
+}
+.top .gouwu-img{
+	width: 48px;
+	height: 33px;
+	border-top-left-radius:5px; 	
+	border-top-right-radius:5px; 
+	position: relative;
+	text-align: center;
+}
+.top .gouwu-img:hover{ background: white;}
+.top .gouwu-img:hover .gouwu-p{display: block;}
+/*第二层搜索样式**************************/
+.user{
+	height:102px;
+	background:white;
+	margin-top: 40px
+}
+.user a{color:#333;}
+.userleft ul,.userright ul{
+	display:flex;
+	flex-wrap: wrap;
+}
+.userleft>ul li{
+	margin-top:30px;
+	margin-right:40px;
+	font-size:22px;
+}	
+.userright>ul li{
+	margin-right:7px;
+}
+.userright {
+	width:410px;
+	position: relative;}
+.userright div .input{
+	width:410px; height:36px;
+	margin:27px -9px 8px -10px;
+	border-radius:25px;
+	outline:none;
+	border: 1px solid #ddd;
+	padding-left:25px;
+}
+.user .userright .icon{
+	background :url("../img/精灵图.png") no-repeat;
+	display: inline-block;
+	height: 24px;  width: 24px;
+	background-position: -170px -48px;
+	top:34px; right:21px;
+	position: absolute;
+}
+/*主页侧边白框竖条*/
+.mod-right-side{
+	background: rgba(0,0,0,.1);
+	border-left: 1px solid white;
+	bottom: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 39px;
+}
+.mod-right-side .right-mod,.right-ruanjian{
+	position: absolute;
+	right: 0;
+	width: 100%;
+	text-align: center;
+}
+.right-mod{	bottom: 50%;}
+.right-ruanjian{bottom: 25%;}
+.sript .liaotian,.weixin,.ruanjian,.shang{
+	display: inline-block;
+	background: url(../img/精灵图.png);
+	width: 36px; height: 31px;
+}
+.sript .liaotian{
+	background-position: -166px -71px;
+}
+.sript .weixin{
+	background-position: -166px -98px;
+}
+.sript .ruanjian{
+	background-position: -166px -149px;
+}
+.sript .shang{
+	background-position: -166px -174px;
+}
+
+
+
+

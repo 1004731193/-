@@ -1,0 +1,232 @@
+/*顶部a变迁hover变化字体颜色*/
+.tou>.top a:hover{color:white;text-decoration: none;}
+/*轮播样式*/
+	.carousel-indicators li{
+		width:0.5rem;
+		height:0.5rem;
+		background-color: #fff;
+		margin-left: 0.375rem;
+		margin-right: 0.357rem;
+		border-radius: 50%;
+	}
+	.carousel-indicators .active{
+		background-color: #0aa1ed;
+	} 
+	.tu{
+		width: 100%;
+		height:530px;
+	}
+	.arrows{
+		width: 3%; height: 15%;
+		background-color:#aaa;
+		border-radius:0.25rem ;
+		position: relative;
+	}
+	.left,.right{
+		position:absolute;
+		top:40%;
+	}
+	/*设置箭头距离*/
+	.left{
+		left: 25.1%;
+	}
+	.right{
+		margin-right: 9%;
+	}
+	 /*轮播ul示意样式*/
+	 .carousel-inner,.carousel-item>img+img{
+		width: 100%; height:530px;
+		position: relative;   
+	}
+	.lunbo{                           
+		width:230px; height:530px;
+		list-style: none;
+		position: absolute;
+		background:rgba(0,0,0,.3);
+		top:0;
+	}
+	.lunbo>li>a{
+		text-decoration:none;
+		color:#fff;
+		font-size:17px;
+		padding-left:81px;
+		line-height:37px;
+	}
+	.lunbo>li{margin-top:10px;}
+	.lunbo>li:hover{        
+		background:rgba(0,0,0,.6); 
+	}
+	.center{
+		width: 1180px;
+		margin: 0 auto;}
+	/*热门活动*/
+	.s1{
+		display:block;
+		color:#333333;
+		font-size:30px;
+		margin-top:15px;
+		width: 1180px;
+		margin: 0 auto;
+	}
+	.remen{
+		width:1180px; height:480px;
+		display:flex;
+		justify-content:space-between;
+		margin:10px auto;
+	}
+	#rm1,#rm2,#rm3{
+		width:380px; height:480px;
+	}
+	/*新品推荐*/
+	.xinpin{
+		width:1180px; height:280px;
+		display:flex;
+		justify-content:space-between;
+		margin:10px auto;
+		}
+	#xp1,#xp2,#xp3,#xp4{
+		width:280px; height:280px;
+	}
+	/*顶通用*/
+	.tongy{
+		width:1180px; height:960px;
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:space-between;
+		margin:10px auto;
+	}
+	#ty1,#ty1 img{width:580px; height:460px;}
+	#ty2,#ty3,#ty4,#ty5,#ty6,#ty7{
+		width:280px; height:460px;
+		background:#fff;
+		padding-top:20px;
+		padding-left:15px;
+	}
+	.tongy img{width:240px; height:240px;	}
+	.tongy .namep,.descp,.price{
+	  color:#000;
+		text-align:center;	
+		
+	}
+	.tongy .namep{
+		width:240px; height:25px;
+		margin-top:50px;
+		margin-left:15px;
+		font-size:18px;
+	}
+	.tongy .descp{
+		color: #999;
+    overflow: hidden;
+	}
+	.tongy .price{
+		line-height: 40px;
+    margin-top: 10px;
+		font-size:27px;
+		color:red;
+	}
+	.tongy .price .old-price{
+		color: #999;
+    font-size: 14px;
+    text-decoration: line-through;
+	}
+	/*社区*/
+	.shequ{
+		width:1180px; height:400px;
+		display:flex;
+		justify-content:space-between;
+		margin:10px auto;
+		}
+	#sq1,#sq2,#sq3,#sq4,.bg{ 
+		width:280px; height:200px;
+		background: white
+	}	
+	.w-shequ{	width:280px; height:400px;}
+	.name-p{
+		width:240px;  height:65px;
+		overflow: hidden;
+		margin:0 auto;
+		padding-top:15px;
+	}
+	.name-p>span{
+		font-size: 18px;
+		text-align: center;
+	}
+	.title-h{
+		color: #999;
+    display: -webkit-box;
+    font-size: 14px;
+    height: 60px;
+    -webkit-line-clamp: 3;
+		margin:10px 20px;
+    overflow: hidden;
+    text-align: justify;
+	}
+	/*更多*/
+	.gengduo{
+		width:1180px;
+		display:flex;
+		flex-flow: wrap;
+		justify-content:space-between;
+		margin:15px auto;
+	}
+	.gd-t{
+		width:200px;
+		height:325px;
+		margin-top:15px; 
+		background-color:white; 
+	}
+	.gd-t>img{
+		width: 180px; height: 180px;
+		margin:15px auto;
+		display: block;
+	}
+	.gd-t .name{
+		width: 180px; height: 40px;
+    display:block;
+    font-size: 12px;
+    overflow: hidden;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.gd-t .price{
+		margin-top:10px;
+		line-height: 50px;
+    overflow: hidden;
+		color: #dd0e00;
+    font-size: 20px;
+	}
+	/* 左侧边框导栏 */
+	#uls{
+		display:none;
+		background:white;
+		margin-right: 598px;
+    padding: 0;
+    position: fixed;
+    right: 50%;
+		top: 50%;
+		z-index: 103;	
+		transition: 0.2s all linear;
+	}
+	#uls .uls-lis{
+		width:104px; height:300px;
+		text-align: center;
+		line-height: 33px;
+		padding:10px;
+	}
+	#uls .uls-lis>li a{
+		color:black;
+		text-decoration: none;
+	}
+	#uls>.uls-lis li+li{
+		border-top:1px solid #eee;
+	}
+	#uls .uls-lis li>a:hover{
+		color:red;
+		cursor: pointer;
+		/* counter-increment:pointer; */
+		margin-left:5px;	
+		font-size:12px;
+		transition: all .3s linear;
+	}
+
+

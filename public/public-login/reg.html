@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>注册页面</title>
+<link rel="stylesheet" href="../css/reg.css">
+</head>
+<body>
+<!-- 头信息 -->
+<div class="logo-top">
+    <div class="center">
+        <img src="../login-img/360logo.png"/>
+    </div>
+</div>
+<!-- 中间部分 -->
+<div class="cen-l">
+    <ul>
+      <li>
+        <p>用户名:</p>
+        <input type="text" name="uname" id="uname" placeholder="请输入用户名"><br>
+        <!-- <span>用户名不正确</span> -->
+      </li>
+      <li>
+        <p>密码:</p>
+        <input type="password" name="upwd" id="upwd" placeholder="请输入密码"><br>
+        <!-- <span>密码不正确</span> -->
+      </li>
+      <li>
+        <p>邮箱:</p>
+        <input type="email" name="email" id="email" placeholder="请输入邮箱"><br>
+        <!-- <span>邮箱格式不正确</span> -->
+      </li>
+      <li>
+        <p>电话号:</p>
+        <input type="phone" name="phone" id="phone" placeholder="请输入电话号码"><br>
+        <!-- <span>电话号码格式不正确</span> -->
+      </li>
+      <li>
+        <button onclick="login()">注册</button>
+      </li>
+    </ul>
+</div>
+<script src="../js/jquery-1.11.3.js"></script>
+<script>
+//点击 提交事件button
+function login(){
+    var $uname = document.getElementById("uname");
+    var $upwd = document.getElementById("upwd");
+    var $email = document.getElementById("email");
+    var $phone = document.getElementById("phone");
+    console.log($uname.value);
+    if(!$uname.value.trim()){
+        alert("用户名不能为空!");
+        return;
+    }
+    if(!$upwd.value.trim()){
+        alert("密码不能为空!");
+        return;
+    }
+    if(!$email.value.trim()){
+        alert("邮箱不能为空!");
+        return;
+    }
+    if(!$phone.value.trim()){
+        alert("电话不能为空!");
+        return;
+    }
+    //1.创建异步对象
+    var xhr=new XMLHttpRequest();
+    //4.绑定监听，接收响应
+    xhr.onreadystatechange=function(){
+        if(xhr.readyState==4&&xhr.status==200){
+            var result=xhr.responseText;
+            alert("注册成功");	
+        }
+    }
+    //2.创建请求
+    xhr.open("post","/user/reg",true);
+    //3.发送请求
+    xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+    //创建请求主体
+    var formdata="uname="+$uname.value+"&upwd="+$upwd.value+"&email="+$email.value+"&phone="+$phone.value;
+    console.log(formdata);
+    xhr.send(formdata);
+}
+</script>
+</body>
+</html>

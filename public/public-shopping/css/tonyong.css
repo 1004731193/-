@@ -1,0 +1,88 @@
+*{margin:0; padding:0; }
+ul{list-style: none;}
+a{text-decoration: none;}
+body{ background: #f5f5f5;}
+.bg{background: white;}
+.commTop{
+  width: 1250px;  height: 1050px;
+  margin: 30px auto 0;
+}
+.commTop>.lis li{
+  width: 238px;  height: 328px;
+  margin: 5px 5px 15px;
+  float: left;
+  background: white;
+  text-align: center;
+  line-height: 34px;
+  font-size: 14px;
+  border: 0.2px solid transparent;
+} 
+.commTop>.lis>li .price{
+  color:red;
+}
+.commTop>.lis>li .btn{
+  width: 126px;  height: 32px;
+  border:1px solid red;
+  margin-top:15px; 
+  background: white;
+  display: none;
+}
+.lis li:hover{
+  border: 0.2px solid red; 
+}
+.lis>li .btn:hover{
+  background: red;
+  color:white;
+}
+.lis>li:hover .btn{
+  display:inline-block;
+}
+/*头部信息*/
+.top{
+  width: 1250px;
+  margin:0 auto;
+}
+.top .top-t{
+  line-height: 48px;
+  height: 48px;
+  padding-left: 20px;
+  border-bottom:1px solid #eee;
+}
+.top .top-t .hint{
+  width: 60px;  height: 48px;
+  float: left;
+  vertical-align: middle;
+}
+.top .top-t .box{
+  width: 115px;  height: 48px;
+  float: left;
+}
+.top .top-t a{color:#000;}
+.top a:hover{color:green;}
+/*底部标签上下页码*/
+.d-bottom{
+  width: 1240px;
+  height: 30px;
+  margin: 20px auto;
+  text-align: center;
+  line-height: 30px;
+}
+.d-bottom span{
+  width: 50px;  height: 27px;
+  background: #fff;
+  border: 1px solid #ddd;
+  display: inline-block;
+  margin-left: 2px;
+  padding:0 3px;
+  text-align: center;
+  font-size: 12px;
+  color:#999;
+}
+.d-bottom span:nth-child(3){
+  background: #23ac38;
+  border: 1px solid #23ac38;
+  color: #fff;
+}
+.footer img{
+  width: 100%;
+}

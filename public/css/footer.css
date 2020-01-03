@@ -1,0 +1,71 @@
+/*底部售后 底座*/
+.dizuo{
+  width:1180px; height:367px;
+  display:flex;
+  justify-content:space-between;
+  margin:0 auto;
+  padding-top:55px;
+}
+.dizuo h3{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 27px;
+  }
+.leftd{      /*左*/
+  width:263.99px;	height:266.98px;
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 6px;
+}
+.leftd .xian p{
+  border-top:1px solid #000;
+  line-height:30px;
+  margin-top:25px;
+}
+.centerd{        /*中*/
+  width:430px;
+  height:226.94px;
+  display:flex;
+  justify-content:space-between;
+  line-height:34px;
+  margin-left:-28px;
+}
+.centerd a{color:#333;}
+.centerd img{
+  margin-top:10px;
+  width:127px;
+}
+.rightd{           /*右*/
+  width:300.99px; height:230px;
+  border-left:1px solid #000;
+  margin-top:0px;
+}
+.rightd h3{text-align:center;}
+.rightd .p3{
+  color: #999;
+  font-size: 14px;
+  line-height: 30px;
+  text-align:center;
+}
+	/*底部黑色*/
+	.dBlank{
+		height:200px;
+		background-color:#333; 
+  }
+  .row{
+    width: 1180px; 
+    display: flex;
+    justify-content:space-around;
+    margin:0 auto !important;
+    border-bottom: 1px solid #666;
+    padding: 25px 0;
+    font-size: 30px;
+  }
+  .row a{color:#fff !important}
+  .dBlank p{
+    margin-top:10px;
+    color:white;
+    text-align: center;
+  }

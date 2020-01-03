@@ -1,0 +1,92 @@
+.img{background-color:#ffffff; border-top:1px solid #000;} 
+.ts{ width: 1180px; margin: auto;  }
+.sjfm{
+    width:1180px;
+    margin:0 auto;
+    display: flex;
+}
+/*左边*/
+.Sleft{ width: 552px; height: 560px; }
+.Sleft>img{ width: 480px; }
+.Sleft ul{ width: 452px;}
+.Sleft>.lu>li img{ width:90px;  float: left; }
+/*右边*/
+.Sr{width: 620px;
+    height: 60px;
+    border-radius: 5px;
+    background: rgba(0,0,0,.1);
+    font-size: 36px;
+    color:#fa5437;
+}
+.cate{ width: 620px;  height:42px; }
+.cate>.sb{
+    color:red;
+    border:1px solid red;
+}
+.txt{ width: 620px;  height: 60px;}
+.txt input{
+    width: 33px;    height: 30px;
+    /* vertical-align: middle; */
+}
+.Sright>.txt button{
+    width:30px;
+    height: 30px;
+}
+.Sright .Mj{
+    color:red;
+    background:lightpink;
+}
+/*产品锚点部分*/
+.cp{ 
+    height:61px; 
+    border-top:1px solid #eee;
+    border-bottom:1px solid #eee;
+}
+.neirong{ width:1180px;  margin: 0 auto;}
+.input-k{ width:750px;  margin: 0 auto;}
+.neirong a{color:#000; font-size: 30px;}
+/*商品图片宽度*/
+.kuan{width: 750px; margin: auto; }
+/*规格下边框*/
+.neirong>#guige{  font-size: 30px;  }
+.input-k>input{text-align: center; height:36px;}
+.neirong>#wenti{  font-size: 30px;  }
+.x{border-bottom: 1px solid #000;}
+/*解答*/
+.jied{width: 750px; margin: auto;}
+.jied>.xulie{
+    width:1310px; height:300px;
+    margin-top:10px;
+}
+/*解答精灵图*/
+.jied>.xulie>dt sapn{
+  display: inline-block;
+  font-size: 18px;
+  width: 35px;
+} 
+.jied>.xulie dt i {
+    background: url(../shopping-img/jinglingtu.png) left top no-repeat;
+    display: inline-block;
+    height: 30px;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 35px;
+    margin:10px 0 10px 0;
+}
+.jied>.xulie dd{margin-bottom:0}
+.jied>.xulie dd i{
+    background: url(../shopping-img/jinglingtu.png) left bottom no-repeat;
+    display: inline-block;
+    height: 30px;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 35px;
+    margin-left:29px;
+}
+/*空的div撑开界面*/
+.kong{
+    height:52px;
+    background: white;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;      
+}

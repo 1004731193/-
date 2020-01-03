@@ -1,0 +1,10 @@
+.table{
+  width:1000px;
+  text-align:center;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+}
+td[colspan="3"]{text-align:right;}
+.tbody{
+  line-height: 30px;
+}

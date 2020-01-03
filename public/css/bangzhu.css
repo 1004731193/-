@@ -1,0 +1,127 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a{text-decoration:none; color:black !important;}
+ul{list-style-type:none;}
+body{background: #f2f2f2;}
+/*整体宽度居中*/
+.cenb{
+  width: 1200px;  height: 1244px;
+  margin: 0 auto;
+  margin-top:50px;
+}
+/*共有标题属性*/
+.hd{
+  width: 970px; height:50px;
+  line-height: 50px;
+  border-bottom:1px solid #eee; 
+  margin: 0 auto;
+}
+.hd .login{float: left; font-size: 18px;}
+.hd .d-one{
+   float:right;  font-size: 14px;
+    position: relative;
+}
+.hd>.d-one>a>img{
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.hd>.d-one .ewM{
+  width: 260px;  height: 320px;
+  position:absolute;
+  top:34px;  right: -5px;
+  display: none;
+}
+.hd>.d-one a:hover>div.ewM{display: block;}
+.all{   /*p标签字体*/
+  width: 970px;  height: 69px;
+  line-height: 28px;
+  font-size: 16px;
+  padding: 20px 15px;
+}
+.all span{ padding-left:20px;}
+.login-right,.vip-right,.password-right{
+  display: none ;
+}
+#sightcing .disblock{
+  display: block;
+}
+/*公用样式*************  题目结尾↑↑*/
+.cenb .help-left{
+  width: 180px;  height: 710px;
+  float: left; padding: 15px;
+  background: white;
+} 
+.cenb>.help-left .help-left-n{
+  width: 150px;  height: 667px;
+  margin:0 auto;
+  font-size: 13px;
+  line-height: 33px;
+  margin-top: 8px;
+  text-align: center;
+}
+.cenb>.help-left>.help-left-n h3:nth-child(3){ /*上边框线*/
+  padding-top:10px;
+  margin-top: 10px;
+  border-top: 1px solid #ddd;
+}
+.cenb>.help-left>.help-left-n ul:nth-child(4){
+  margin-bottom:10px;
+  padding-bottom:10px;
+  border-bottom: 1px solid #ddd;
+}
+.cenb>.help-left>.help-left-n>ul li:hover{
+  background: rgba(0,0,0,.1);
+  font-size: 12px;
+  transform: all 0.3s liner;
+  border-left:2px solid rgb(114, 8, 105);
+}
+/*右边第一层*******用户注册****/
+.cenb .login-right{
+  width: 1002px; height: 1134px;
+  float: right;
+  background: white;
+
+}
+.login-right .img-01{ 
+  width: 970px; height: 292px;
+  padding: 20px 55px;
+}
+.login-right .img-02{
+  width: 950px; height: 510px;
+  padding: 20px 15px;
+}
+/*右边第二层*******会员说明*/
+.vip-right{
+  width: 1002px; height:2040px;
+  float: right;
+  background: white;
+  margin-top: 10px;
+
+}
+.vip-right .vip{
+  width: 970px; height: 134px;
+  padding-top: 75px;
+  text-align: center;
+}
+.vip-right>.vip span{
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+}
+/*右边第三层*******用户找回密码****/
+.password-right{
+  width: 1002px; height:2027px;
+  float: right;
+  background: white;
+  margin-top: 10px;
+
+}
+.password-right .mima-one{
+  width: 950px;  height:308px;
+  text-align: center;
+  padding: 20px 55px;
+}
+.password-right .mima-01{
+  width: 970px; height: 232px;
+  line-height: 28px;
+  padding: 20px 55px;
+}

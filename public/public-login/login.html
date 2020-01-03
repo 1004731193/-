@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>登录</title>
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+<!-- 头信息 -->
+<div class="logo-top">
+  <div class="center">
+      <img src="../login-img/360logo.png"/>
+  </div>
+</div>
+<!-- 中间部分 -->
+<div class="bg">
+  <div class="cen-z">
+    <span>用户名:</span> <input type="text" name="uname" id="uname" placeholder="请输入用户名"><br>
+    <span>密&nbsp;&nbsp;码：</span> <input type="password" name="upwd" id="upwd" placeholder="请输入密码"><br>
+  <button onclick="login()">登&nbsp;&nbsp;录</button>
+</div>
+</div>
+<script>
+  function login(){
+    var $uname = document.getElementById("uname");
+    var $upwd = document.getElementById("upwd");
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function(){
+      if(xhr.readyState == 4 && xhr.status == 200){
+        var result = JSON.parse(xhr.responseText);
+        // if(result.code == 200){
+        //   console.log("登录成功!");
+        // }else{
+        //   console.log("登录失败!");
+        // }
+        var msg = "";
+        // console.log(result)
+        // console.log(result.code)
+        result.code == 200 ? msg = "成功" : msg = "失败";
+        alert(`登录${msg}!`);
+      }
+    }
+    xhr.open("post","/user/login",true);
+    var formdata = `uname=${uname.value}&upwd=${upwd.value}`;
+    xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+    xhr.send(formdata); 
+  }
+</script>
+</body>
+</html>   

@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="../css/gouwuche.css">
+  <title>使用Selector API实现购物车客户端计算</title>
+</head>
+<body>
+	<table id="data" class="table">
+		<thead>
+			<tr>
+				<th>商品名称</th>
+				<th>单价</th>
+				<th>数量</th>
+				<th>小计</th>
+				<th>是否删除</th>
+			</tr>
+		</thead>
+		<tbody class="tbody">
+			<tr>
+				<td>戴尔笔记本</td>
+				<td>¥4488.00</td>
+        <td>
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+        </td>
+				<td>¥4488.00</td>
+				<td><input name="delete" type="button" value="x"></td>
+			</tr>
+			<tr>
+				<td>联想笔记本</td>
+				<td>¥5288.00</td>
+				<td>
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+				</td>
+				<td>¥5288.00</td>
+				<td><input name="delete" type="button" value="x"></td>
+			</tr>
+			<tr>
+				<td>神州笔记本</td>
+				<td>¥4288.00</td>
+        <td>
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+        </td>
+				<td>¥4288.00</td>
+				<td>
+					<input name="delete" type="button" value="x">
+				</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="3">总额: </td>
+				<td>¥14064.00</td>
+			</tr>
+		</tfoot>
+	</table>
+
+	<script>
+	var table=document.getElementById("data")
+	var btns=table.getElementsByTagName("button")
+		for(var btn of btns){
+			btn.onclick=function(){
+			var span=this.parentNode.children[1];
+			console.log(btn)
+			var n=parseInt(span.innerHTML);	
+			if(this.innerHTML=="+"){
+				n++;
+			}else if(n>1){
+				n--;
+			}
+			span.innerHTML=n;
+			var td=this.parentNode;
+			var price=parseFloat(
+				td.previousElementSibling.innerHTML.slice(1)
+			)
+			var total=price*n;
+			td.nextElementSibling.innerHTML=`¥${total.toFixed(2)}`
+			var tds=table.querySelectorAll(
+				"tbody td:nth-child(4)"
+			);
+			var xiao=0;
+			for(var td of tds){
+				xiao+=parseFloat(td.innerHTML.slice(1))
+			}
+			var lastTd=table.querySelector(
+				"tfoot td:last-child"
+			);
+			console.log(xiao)
+			lastTd.innerHTML=`¥${xiao.toFixed(2)}`;
+		}
+	}
+
+	var dels=document.getElementsByName("delete");
+	for(var del of dels){
+		del.onclick=function(){
+			var tr=this.parentNode.parentNode;
+			console.log(tr);
+			var bool=confirm("是否删除")
+			if(bool==true){
+				table.deleteRow(tr.rowIndex)
+			}
+		}
+	}
+	</script>
+</body>
+</html>

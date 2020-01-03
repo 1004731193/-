@@ -1,0 +1,99 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ul{list-style: none;}
+a{text-decoration: none; color:white;}
+.member{
+  height: 557px;
+  background:url("../img/url-img/img/tou-imgs/360会员商城背景.png") no-repeat;
+  background-position: center top;
+  padding-top: 80px;
+} 
+/* 上步360会员商城 */
+.member .client{
+  width: 500px; height: 330px;
+  position: relative;
+  margin-left: 220px;
+  text-align: center;
+  color:white;
+}
+.member>.client .vip{
+  font-size: 76px;
+  font-weight: 400;
+  text-shadow: -5px 0 5px #555;
+}
+.member>.client .low{
+  font-size: 30px;
+  text-shadow: -3px 0 10px #555;
+}
+.member>.client .QR{
+  width: 160px;
+  padding:10px;
+  margin:22px 0 0 28px;
+  float: left;
+  background: url("../img/url-img/img/tou-imgs/边框.png") no-repeat;
+}
+.member>.client>.QR img{ width: 140px;}
+.member>.client .download{
+  width: 276px;  height: 156px;
+  float: right;
+  margin: 22px 20px 0 0;
+}
+/*中间app*/
+.member>.client>.download a{
+  border: 2px solid #fff;
+  border-radius: 30px;
+  box-sizing: content-box;
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  margin: 12px 0;
+  padding: 10px 20px;
+}
+.member>.client>.download span{
+  display: inline-block;
+  font-size: 24px;
+  line-height: 36px;
+  vertical-align: top;
+}
+.member .phone{
+  background: url("../img/url-img/img/tou-imgs/iphone.png") no-repeat;
+  height: 701px;
+  padding-left: 167px;
+  padding-top: 120px;
+  position: absolute;
+  right: 100px;
+  top: 0;
+  width: 487px;
+}
+/* 尾部样式 */
+.location,.exclusive{ 
+  width: 1240px;  height:618px;
+  margin: 0 auto;  
+}
+.location .accurate{
+    width: 450px;  height: 286px;
+    float: right;
+    position: relative;
+    top: 50%; 
+    padding-left: 76px;
+    line-height: 36px;
+}
+.exclusive .e-app{
+    width: 450px; height: 286px;
+    float: left;   top: 50%;
+    line-height: 36px;
+    position: relative;
+}
+.h1-z{font-size: 41px;}
+.h1-z>img{
+  vertical-align: middle;
+}
+.p-z{
+  font-size: 27px;
+  margin-top:25px;  
+}
+.lis li{ font-size: 25px;}
+.location .l-img{ width: 780px;}
+.exclusive .e-img{ 
+  width: 780px;
+  float: right; 
+}
